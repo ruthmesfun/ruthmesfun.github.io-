@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Slackey" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaina" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+      <ul>
+        <li><a class="active" id='title'>RuthGabelodeon</a></li>
+        <li class="toolbar"><a href="https://www.nick.com/shows/spongebob-squarepants" target="_blank">Shows</a></li>
+        <li class="toolbar"><a href="https://www.nick.com/games/" target="_blank" >Other Games</a></li>
+        <li class="toolbar"><a href="https://www.nick.com/tv-schedule" target="_blank" >Tv Schedule</a></li>
+        <li class="toolbar right" ><a id ='leaderBoard'>Leaderboard</a></li>
+      </ul>
+
+      <center><div id='runner_Game'>
+          <img id='imgTitle'src="assets/images/SpongeBob_SquarePants_logo.svg.png">
+          <h2 class='runner'>Runner Game<h2>
+              <p class='directions'>Press the <b>space bar</b> to make SpongeBob jump!</p>
+        </div></center>
+
+    <center><div id = "you_lost"> 
+            <div>
+                <h1 id='lost_text'>You Lost!</h1>
+                <img class='lost_pic' src ='assets/images/you_lost.gif'>
+                <img class='lost_pic' src='assets/images/-plankton-sticker-spongebob-squarepants-39750396-500-500.gif'>
+                <form action="/" method="post">
+                    <label for="user" class='lost_text'>Type your name:</label>
+                    <input type="text" name="userName" id="user_name">
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+
+    </div></center>
+
+    <center><button id = 'button'> PLAY IT!</button></center>
+
+
+    <canvas></canvas>
+
+    <div id="myModal" class="modal">
+            <div class="modal-content" id='modalContent'>
+                <span class="close">X</span>
+                <table style="width:100%">
+                    <h2> Top 10</h2>
+  
+                </table>
+        </div>
+    </div>
+
+    <script src="src/index.js"></script>
+</body>
+</html>
